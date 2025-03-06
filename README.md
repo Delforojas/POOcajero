@@ -28,9 +28,11 @@ El objetivo del proyecto es aplicar los principios de **POO** en Java, utilizand
 ## 🛠 Estructura del código  
 El proyecto se basa en el uso de **clases POO**, con una estructura similar a la siguiente:
 
-📌 **Clases principales:**  
-- `CuentaBancaria` → Clase base con atributos como `saldo`, `titular`, `numeroCuenta`.  
-- `CuentaAhorro` y `CuentaCorriente` → Heredan de `CuentaBancaria`, con reglas específicas.  
-- `Usuario` → Representa a los clientes, con métodos para interactuar con su cuenta.  
-- `Cajero` → Contiene la lógica de operaciones y transacciones.  
-- `Main` → Método principal que ejecuta el programa.  
+📌 Clases principales:
+	•	Cuenta.java → Clase base que representa una cuenta bancaria con atributos como saldo, titular y métodos para gestionar transacciones.
+	•	Usuario.java → Representa a los clientes del sistema, gestionando su información personal y las cuentas asociadas.
+	•	Dinero.java → Maneja las operaciones de dinero dentro del cajero automático, como depósitos y retiros.
+	•	Ingreso.java → Clase que gestiona los ingresos de dinero en la cuenta del usuario.
+	•	Gasto.java → Clase que representa los gastos realizados por los usuarios en el sistema.
+	•	GastoException.java → Excepción personalizada para manejar errores relacionados con gastos no permitidos o saldo insuficiente.
+	•	Main.java → Contiene el método principal que ejecuta el programa, iniciando el cajero automático y permitiendo la interacción del usuario.
